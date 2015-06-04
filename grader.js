@@ -1,8 +1,8 @@
-var math = require('./node_modules/mathjs')
+var math = require('./node_modules/mathjs');
 module.exports = {
   letterGrader: function(arr){
     for (var i = 0; i < arr.length; i++){
-      if(arr[i] >= 90){
+      if (arr[i] >= 90){
         return 'A';
       } else if (arr[i] >= 80 || arr[i] <= 89) {
         return 'B';
@@ -19,7 +19,8 @@ module.exports = {
   medianScore: math.median,
   modeScore: function(arr) {
     var mode = {};
-    var max = 0, count = 0;
+    var max = 0,
+      count = 0;
     arr.forEach(function(a) {
         if (mode[a]) {
           mode[a]++;
